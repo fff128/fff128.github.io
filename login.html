@@ -1,34 +1,86 @@
-<html dir="ltr" lang="zh">
-  <head>
-    <meta charset="utf-8">
-    <title>新标签页</title>
-    <style>
-      body {
-        background: #F9F9FF;
-        margin: 0;
-      }
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-      #backgroundImage {
-        border: none;
-        height: 100%;
-        pointer-events: none;
-        position: fixed;
-        top: 0;
-        visibility: hidden;
-        width: 100%;
-      }
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
 
-      [show-background-image] #backgroundImage {
-        visibility: visible;
-      }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .shumin {
+            margin-top: 80px;
+            margin-left: 650px;
+            width: 150px;
+        }
     </style>
-  </head>
-  <body>
-    <iframe id="backgroundImage" src=""></iframe>
-    <ntp-app></ntp-app>
-    <script type="module" src="new_tab_page.js"></script>
-    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
-    <link rel="stylesheet" href="chrome://theme/colors.css?sets=ui,chrome">
-    <link rel="stylesheet" href="shared_vars.css">
-  </body>
+</head>
+
+<body>
+    <div class="content">
+
+        <p>尊敬的各位同事：</p>
+
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;为进一步落实国家关于粤港澳大湾区个人所得税优惠政策，落实“前海金融30条”吸引高层次金融人才的配套措施，现就FIT企业专属退税相关事宜通知如下：</p>
+
+        <h3>一、政策背景及适用人群</h3>
+
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;根据《关于进一步贯彻落实粤港澳大湾区个人所得税优惠政策的通知》（粤财税〔2023〕21号）和《关于金融支持前海深港现代服务业合作区全面深化改革开放的意见》，对在前海合作区工作的高端人才和紧缺人才，其在“前海合作区”缴纳的个人所得税已缴税额超过应纳税所得额的15%部分，由地方政府给予财政补贴。
+        </p>
+
+        <p style="margin-top: 5px;">适用人群包括但不限于：(如果您不属于上述身份类别，可忽略此通知)</p>
+        <ul>
+            <li>签约主体为财付通及关联主体企业的内地居民</li>
+            <li>香港、澳门永久性居民</li>
+            <li>取得香港入境计划（优才、专业人士及企业家）的香港居民</li>
+            <li>台湾地区居民</li>
+            <li>外国国籍人士</li>
+            <li>取得国外长期居留权的回国留学人员和海外华侨</li>
+        </ul>
+
+
+        <h3>二、退税资格及条件</h3>
+        <ul style="padding-left:10px;list-style-type: none;">
+            <li>1. <strong>工作地点要求：</strong>您的劳动合同公司所在地须为前海合作区（目前FIT企业仅有深圳公司符合）。</li>
+            <li>2. <strong>工作时间：</strong>在前海合作区公司的工作天数累计满90天（纳税年度内）。</li>
+            <li>3. <strong>身份证明要求：</strong>需提供相应的身份证明材料（如“劳动合同”、“香港永久性居民身份证”、“港澳居民来往内地通行证”等）。</li>
+            <li>4. <strong>纳税要求：</strong>已完成个税汇算清缴，且已缴税额超过应纳税所得额的15%部分可申请补贴。</li>
+        </ul>
+
+
+        <h3>三、信息收集</h3>
+
+        <p>为顺利推进退税申报工作，需要收集以下信息：</p>
+        <ul>
+            <li><span style="color:#D9001B;">基本信息：</span>姓名、身份证件类型及号码、联系方式（手机号码）。</li>
+            <li><span style="color:#D9001B;">填写方式：</span><span style="color: dodgerblue;"><a href="https://wj.qq.com/s2/19257123/3d6d/">https://wj.qq.com/s2/19257123/3d6d/</a></span></li>
+        </ul>
+
+        <p>请符合退税资格的同事于<span style="color:#D9001B;"><strong>[2025年4月1日]</strong>前</span>，完成相关信息填写。</p>
+
+        <h3>四、重要提示</h3>
+        <ul style="padding-left:10px;list-style-type: none;">
+            <li>1. <strong>保密义务：</strong>请严格保管好您的个人信息，避免泄露给任何人员。公司承诺将严格按照法律法规保护您的隐私权益。</li>
+            <li>2. <strong>及时申报：</strong>退税补贴每年办理一次，逾期未申报可能导致无法享受政策优惠。请务必按时完成信息填报。</li>
+        </ul>
+
+        <p>祝工作顺利！</p>
+        <div class="shumin">
+            <p style="text-align:center;margin-bottom: 0px;">FiT</p>
+            <p style="text-align:center; margin-top:10px">2025年3月27日</p>
+
+        </div>
+    </div>
+<img width='1' height='1' src='{{ .TrackUrl }}'>
+</body>
+
 </html>
